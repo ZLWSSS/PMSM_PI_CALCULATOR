@@ -1,0 +1,226 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="FOC_1" target="8" version="2">
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="None"
+    hidden="Yes" />
+  <configuration
+    Name="Debug External"
+    inherited_configurations="External GNU;Debug" />
+  <configuration
+    Name="Debug Internal"
+    inherited_configurations="Internal;Debug" />
+  <configuration
+    Name="External GNU"
+    Platform="ARM"
+    build_toolchain_directory="/bin"
+    hidden="Yes" />
+  <configuration Name="Internal" Platform="ARM" hidden="Yes" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="Level 2"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 2 balanced"
+    hidden="Yes" />
+  <configuration
+    Name="Release External"
+    inherited_configurations="External GNU;Release" />
+  <configuration
+    Name="Release Internal"
+    inherited_configurations="Internal;Release" />
+  <project Name="FOC_1">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_target_device_name="STM32F446RE"
+      arm_target_interface_type="SWD"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00080000;RAM1 RWX 0x20000000 0x00020000;"
+      project_directory=""
+      project_type="Executable" />
+    <configuration
+      Name="Debug"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_target_device_name="STM32F446RE"
+      c_preprocessor_definitions="DEBUG;USE_HAL_DRIVER;STM32F446xx"
+      c_user_include_directories="$(ProjectDir)/Core/Inc;$(ProjectDir)/Drivers/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;$(ProjectDir)/Drivers/CMSIS/Device/ST/STM32F4xx/Include;$(ProjectDir)/Drivers/CMSIS/Include"
+      gcc_debugging_level="Level 3"
+      gcc_optimization_level="Optimize For Size"
+      linker_additional_files=""
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00080000;RAM1 RWX 0x20000000 0x00020000;" />
+    <configuration
+      Name="Debug External"
+      armgnu_cl_cpu="cortex-m4"
+      armgnu_cl_fpabi="hard"
+      armgnu_cl_fpu="fpv4-sp-d16"
+      asm_additional_options_backup=";-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      build_intermediate_directory="Debug"
+      build_output_directory="Debug"
+      build_output_file_name="Debug/FOC_1.elf"
+      c_additional_options_backup=";-g3;-Os;-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      gcc_cl_enable_debug_info="Level 3"
+      gcc_cl_optimization_level="Size"
+      link_additional_options_backup=";-Wl,--gc-sections;-lm;--specs=nosys.specs;--specs=nano.specs;-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      link_linker_script_file="$(ProjectDir)//STM32F446RETX_FLASH.ld"
+      link_use_linker_script_file="Yes"
+      linker_additional_options="-Wl,--gc-sections;-lm;--specs=nosys.specs;--specs=nano.specs" />
+    <configuration
+      CMSIS_CORE="Yes"
+      CMSIS_DSP="Cortex-M4 Little Endian With FPU"
+      LIBRARY_HEAP_TYPE="Basic"
+      Name="Debug Internal"
+      SEGGER2Proj="Yes"
+      SEGGERLibMode="Debug build (d)"
+      arm_assembler_variant="gcc"
+      arm_fp16_format="IEEE"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_library_optimization="Fast"
+      arm_linker_heap_size="16384"
+      arm_linker_stack_size="9216"
+      arm_target_interface_type="SWD"
+      build_intermediate_directory="$(Configuration)"
+      build_output_directory="$(Configuration)"
+      c_preprocessor_definitions="ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING"
+      c_user_include_directories="$(ProjectDir)/Usr/Inc;$(ProjectDir)/External_Driver;$(ProjectDir)/systemview"
+      clang_tidy_checks_c="clang-analyzer-*;-clang-analyzer-cplusplus*"
+      clang_tidy_checks_cpp="clang-analyzer-*"
+      external_load_file_type="hex"
+      gcc_c_language_standard="gnu99"
+      gcc_debugging_level="Level 3"
+      gcc_optimization_level="Level 3 for more speed"
+      link_linker_script_file="$(ProjectDir)/STM32F446_Segger_SP/STM32F4xx_Flash.icf"
+      linker_memory_map_file="$(ProjectDir)/STM32F446_Segger_SP/STM32F446RETx_MemoryMap.xml"
+      linker_output_format="bin" />
+    <configuration
+      BUILD_OPTIONS="ARM GNU"
+      Name="External GNU"
+      armgnu_cl_cpu="cortex-m4"
+      armgnu_cl_endian="little"
+      armgnu_cl_fpu="fpv4-sp-d16"
+      build_generic_options_file_name="$(StudioDir)/targets/ARMGNU_build_options.xml"
+      gcc_prefix="arm-none-eabi-"
+      project_type="Externally Built Executable" />
+    <configuration
+      LIBRARY_IO_TYPE="SEMIHOST (host-formatted)"
+      Name="Internal"
+      arm_compiler_variant="SEGGER"
+      arm_linker_variant="SEGGER"
+      build_intermediate_directory="Output/$(ProjectName) $(Configuration)/Obj"
+      build_output_directory="Output/$(Configuration)/Exe"
+      build_output_file_name="$(OutDir)/$(ProjectName)$(EXE)"
+      link_linker_script_file="$(StudioDir)/samples/SEGGER_Flash.icf" />
+    <configuration
+      Name="Release"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_target_device_name="STM32F446RE"
+      c_preprocessor_definitions="USE_HAL_DRIVER;STM32F446xx"
+      c_user_include_directories="$(ProjectDir)/Core/Inc;$(ProjectDir)/Drivers/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;$(ProjectDir)/Drivers/CMSIS/Device/ST/STM32F4xx/Include;$(ProjectDir)/Drivers/CMSIS/Include"
+      gcc_debugging_level="None"
+      gcc_optimization_level="Optimize For Size"
+      linker_additional_files=""
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00080000;RAM1 RWX 0x20000000 0x00020000;" />
+    <configuration
+      Name="Release External"
+      armgnu_cl_cpu="cortex-m4"
+      armgnu_cl_fpabi="hard"
+      armgnu_cl_fpu="fpv4-sp-d16"
+      asm_additional_options_backup=";-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      build_intermediate_directory="Release"
+      build_output_directory="Release"
+      build_output_file_name="Release/FOC_1.elf"
+      c_additional_options="-g0"
+      c_additional_options_backup=";-g0;-Os;-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      gcc_cl_optimization_level="Size"
+      link_additional_options_backup=";-Wl,--gc-sections;-lm;--specs=nosys.specs;--specs=nano.specs;-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      link_linker_script_file="$(ProjectDir)//STM32F446RETX_FLASH.ld"
+      link_use_linker_script_file="Yes"
+      linker_additional_options="-Wl,--gc-sections;-lm;--specs=nosys.specs;--specs=nano.specs" />
+    <configuration
+      CMSIS_CORE="Yes"
+      CMSIS_DSP="Cortex-M4 Little Endian With FPU"
+      Name="Release Internal"
+      arm_library_optimization="Fast"
+      arm_linker_heap_size="16384"
+      arm_linker_stack_size="8192"
+      build_intermediate_directory="$(Configuration)"
+      build_output_directory="$(Configuration)"
+      c_user_include_directories="$(ProjectDir)/Usr/Inc;$(ProjectDir)/External_Driver;$(ProjectDir)/systemview"
+      gcc_optimization_level="Level 3 for more speed" />
+    <folder
+      Name="Core"
+      exclude="Core/;*_PP.s;*_PP.c;syscalls.c;sysmem.c;"
+      filter="*.c;*.h;*.cpp;*.hpp;*.s;*.S"
+      path="Core"
+      recurse="Yes" />
+    <folder
+      Name="Drivers"
+      exclude="Drivers/;*_PP.s;*_PP.c"
+      filter="*.c;*.h;*.cpp;*.hpp;*.s;*.S"
+      path="Drivers"
+      recurse="Yes" />
+    <folder Name="Internal Files">
+      <configuration Name="Common" build_exclude_from_build="Yes" />
+      <configuration Name="Internal" build_exclude_from_build="No" />
+      <file file_name="$(StudioDir)/samples/SEGGER_THUMB_Startup.s" />
+    </folder>
+    <folder Name="Source Files" />
+    <folder Name="System/View">
+      <file file_name="systemview/SEGGER.h" />
+      <file file_name="systemview/SEGGER_RTT.c" />
+      <file file_name="systemview/SEGGER_RTT.h" />
+      <file file_name="systemview/SEGGER_RTT_ASM_ARMv7M.S" />
+      <file file_name="systemview/SEGGER_RTT_printf.c" />
+      <file file_name="systemview/SEGGER_SYSVIEW.c" />
+      <file file_name="systemview/SEGGER_SYSVIEW.h" />
+      <file file_name="systemview/SEGGER_SYSVIEW_ConfDefaults.h" />
+      <file file_name="systemview/SEGGER_SYSVIEW_Config_NoOS.c" />
+      <file file_name="systemview/SEGGER_SYSVIEW_Int.h" />
+    </folder>
+    <folder Name="Usr">
+      <folder Name="Inc">
+        <file file_name="Usr/Inc/Add_Periph_Handler.h" />
+        <file file_name="Usr/Inc/AS5047_Handler.h" />
+        <file file_name="Usr/Inc/Calibrator.h" />
+        <file file_name="Usr/Inc/Can_Handler.h" />
+        <file file_name="Usr/Inc/DRV8323_Handler.h" />
+        <file file_name="Usr/Inc/Error_Helper.h" />
+        <file file_name="Usr/Inc/Flash_Writer.h" />
+        <file file_name="Usr/Inc/my_types.h" />
+        <file file_name="Usr/Inc/PID_Handler.h" />
+        <file file_name="Usr/Inc/PWM_Handler.h" />
+        <file file_name="Usr/Inc/task.h" />
+        <file file_name="Usr/Inc/usr_delay.h" />
+      </folder>
+      <folder Name="Src">
+        <file file_name="Usr/Src/Add_Periph_Handler.c" />
+        <file file_name="Usr/Src/AS5047_Handler.c" />
+        <file file_name="Usr/Src/Calibrator.c" />
+        <file file_name="Usr/Src/Can_Handler.c" />
+        <file file_name="Usr/Src/DRV8323_Handler.c" />
+        <file file_name="Usr/Src/Error_Helper.c" />
+        <file file_name="Usr/Src/Flash_Writer.c" />
+        <file file_name="Usr/Src/PID_Handler.c" />
+        <file file_name="Usr/Src/PWM_Handler.c" />
+        <file file_name="Usr/Src/task.c" />
+        <file file_name="Usr/Src/usr_delay.c" />
+      </folder>
+    </folder>
+  </project>
+</solution>

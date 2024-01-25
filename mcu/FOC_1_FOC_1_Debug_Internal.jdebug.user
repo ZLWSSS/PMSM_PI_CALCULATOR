@@ -1,0 +1,67 @@
+
+
+
+Breakpoint=E:/Github_Rep/Motor_Driver/Motor_Board/Usr/Src/AS5047_Handler.c:68:60, State=BP_STATE_DISABLED
+GraphedExpression="(as5047_handler).vel_me", Color=#e56a6f
+OpenDocument="usart.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Core/Src/usart.c", Line=41
+OpenDocument="STM32F4xx_Startup.s", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Core/Startup/STM32F4xx_Startup.s", Line=110
+OpenDocument="main.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Core/Src/main.c", Line=65
+OpenDocument="stm32f4xx_ll_spi.h", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/External_Driver/stm32f4xx_ll_spi.h", Line=684
+OpenDocument="Add_Periph_Handler.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Usr/Src/Add_Periph_Handler.c", Line=0
+OpenDocument="AS5047_Handler.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Usr/Src/AS5047_Handler.c", Line=18
+OpenDocument="can.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Core/Src/can.c", Line=32
+OpenDocument="stm32f4xx_hal_adc.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c", Line=1298
+OpenDocument="PWM_Handler.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Usr/Src/PWM_Handler.c", Line=18
+OpenDocument="task.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Usr/Src/task.c", Line=312
+OpenDocument="stm32f4xx_ll_adc.h", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_adc.h", Line=4276
+OpenDocument="stm32f4xx_it.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Core/Src/stm32f4xx_it.c", Line=223
+OpenDocument="stm32f4xx_hal_can.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c", Line=905
+OpenDocument="DRV8323_Handler.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Usr/Src/DRV8323_Handler.c", Line=0
+OpenDocument="stm32f4xx_hal.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c", Line=311
+OpenDocument="PWM_Handler.h", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Usr/Inc/PWM_Handler.h", Line=0
+OpenDocument="stm32f4xx_hal_uart.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c", Line=3164
+OpenDocument="spi.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Core/Src/spi.c", Line=121
+OpenDocument="usr_delay.c", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Usr/Src/usr_delay.c", Line=21
+OpenDocument="AS5047_Handler.h", FilePath="E:/Github_Rep/Motor_Driver/Motor_Board/Usr/Inc/AS5047_Handler.h", Line=37
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Call Stack", DockArea=RIGHT, x=0, y=1, w=128, h=307, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=2, w=128, h=324, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=1, w=550, h=509, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Code Profile", DockArea=LEFT, x=0, y=0, w=550, h=413, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, GroupByFiles=0, SortRespectsFilters=0, ParentRelativeLoad=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=2, y=0, w=601, h=331, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=BOTTOM, x=0, y=0, w=752, h=331, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=0, CodePaneShown=0, PinCursor="Cursor Movable", TimePerDiv="Fit Width", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="206;0", DataGraphShowNamesAtCursor=0, PowerGraphDrawAsPoints=0, PowerGraphLegendShown=0, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="751;-60", CodeGraphLegendShown=0, CodeGraphLegendPosition="757;-17"
+OpenWindow="Find Results", DockArea=RIGHT, x=0, y=0, w=128, h=290, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Console", DockArea=BOTTOM, x=1, y=0, w=1045, h=331, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+SmartViewPlugin="", Page="", Toolbar="Hidden", Window="SmartView 1"
+TableHeader="Call Stack", SortCol="Function", SortOrder="ASCENDING", VisibleCols=["Function";"Stack Frame";"Source";"PC";"Return Address";"Stack Used"], ColWidths=[184;126;406;100;190;100]
+TableHeader="Code Profile", SortCol="File / Function", SortOrder="DESCENDING", VisibleCols=["File / Function";"Source Coverage";"Inst. Coverage";"Run Count";"Fetch Count";"Load"], ColWidths=[866;135;142;100;107;100]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" (as5047_handler).vel_me"], ColWidths=[100;100;100]
+TableHeader="Data Sampling Setup", SortCol="Average", SortOrder="DESCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[100;100;102;110;102;126;100;107;107]
+TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[217;273;482;100]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;829]
+WatchedExpression="cali_handler", Window=Watched Data 1
+WatchedExpression="as5047_handler", Window=Watched Data 1
+WatchedExpression="error_indicator", Window=Watched Data 1
+WatchedExpression="pi_vel_handler", Window=Watched Data 1
+WatchedExpression="bemf", Window=Watched Data 1
+WatchedExpression="can_handler", Window=Watched Data 1
+WatchedExpression="p_pos_handler", Window=Watched Data 1
+WatchedExpression="pwm_handler", Window=Watched Data 1
+WatchedExpression="can_handler", Window=Watched Data 1
+WatchedExpression="drv_handler", Window=Watched Data 1
+WatchedExpression="V_BUS_Sense", Window=Watched Data 1
+WatchedExpression="Vbus_Tick", Window=Watched Data 1
+WatchedExpression="cmd_csa", Window=Watched Data 1
+WatchedExpression="check_csa", Window=Watched Data 1
+WatchedExpression="cmd_dcr", Window=Watched Data 1
+WatchedExpression="check_dcr", Window=Watched Data 1
+WatchedExpression="cmd_ocpc", Window=Watched Data 1
+WatchedExpression="check_ocpc", Window=Watched Data 1
+WatchedExpression="V_Temp_Sense", Window=Watched Data 1
+WatchedExpression="temp_value", Window=Watched Data 1
+WatchedExpression="V_CC", Window=Watched Data 1
+WatchedExpression="R_t", Window=Watched Data 1
+WatchedExpression="Tempreture", Window=Watched Data 1
+WatchedExpression="flange_pos", Window=Watched Data 1

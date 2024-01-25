@@ -1,0 +1,18 @@
+
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Call Stack", DockArea=RIGHT, x=0, y=1, w=262, h=207, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=2, w=262, h=230, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=1, w=490, h=269, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Code Profile", DockArea=LEFT, x=0, y=0, w=490, h=220, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, GroupByFiles=0, SortRespectsFilters=0, ParentRelativeLoad=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=1, y=0, w=471, h=434, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=BOTTOM, x=0, y=0, w=1448, h=434, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=1, CodePaneShown=1, PinCursor="Cursor Movable", TimePerDiv="1 ns / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="896;0", DataGraphShowNamesAtCursor=0, PowerGraphDrawAsPoints=0, PowerGraphLegendShown=1, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="896;0", CodeGraphLegendShown=1, CodeGraphLegendPosition="910;0"
+OpenWindow="Find Results", DockArea=RIGHT, x=0, y=0, w=262, h=51, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+SmartViewPlugin="", Page="", Toolbar="Hidden", Window="SmartView 1"
+TableHeader="Call Stack", SortCol="Function", SortOrder="ASCENDING", VisibleCols=["Function";"Stack Frame";"Source";"PC";"Return Address";"Stack Used"], ColWidths=[184;126;406;100;190;100]
+TableHeader="Code Profile", SortCol="File / Function", SortOrder="DESCENDING", VisibleCols=["File / Function";"Source Coverage";"Inst. Coverage";"Run Count";"Fetch Count";"Load"], ColWidths=[866;135;142;100;107;100]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time"], ColWidths=[100;100]
+TableHeader="Data Sampling Setup", SortCol="Average", SortOrder="DESCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[210;100;100;100;100;100;100;107;107]
+TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[100;100;100;190]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;829]
